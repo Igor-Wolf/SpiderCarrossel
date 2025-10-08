@@ -1,0 +1,113 @@
+@import "@/app/variables.scss";
+
+.title {
+    font-size: 26vw; // Tamanho padrão baseado na largura da viewport
+    margin: 0;
+
+    // Para telas MUITO grandes (desktop grande)
+    @media screen and (min-width: $max-width) {
+        font-size: 30rem;
+    }
+
+    // Para tablets (modo retrato e paisagem)
+    @media screen and (max-width: 1024px) {
+        font-size: 15vw;    }
+
+    // Para smartphones (ex: iPhone, Android)
+    @media screen and (max-width: 768px) {
+        font-size: 15vw;    }
+
+    // Para smartphones bem pequenos (ex: iPhone SE)
+    @media screen and (max-width: 480px) {
+        font-size: 15vw;
+    }
+}
+
+
+.heroes {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    max-width: calc($max-width - 700px);
+    width: 100%;
+    position: absolute;
+    top: 40%;
+
+    @media screen and (min-width: $max-width) {
+        
+        top: 50%;
+        max-width: calc($max-width - 400px);
+    }
+
+     @media screen and (max-width: 480px) {
+            align-items: first baseline;
+            display: none;
+            
+
+    }
+
+}
+.heroesMobile {
+    align-items: flex-end;
+    justify-content: space-between;
+    max-width: calc($max-width - 700px);
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    display: none;
+
+    @media screen and (min-width: $max-width) {
+        
+        top: 50%;
+        max-width: calc($max-width - 400px);
+    }
+
+     @media screen and (max-width: 480px) {
+            align-items: first baseline;
+            display: flex;
+            top: 90%;
+            filter: blur(5px),
+
+    }
+
+}
+
+.imageContainer {
+
+    position: relative;
+
+    img {
+
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: bottom;
+    }
+
+
+    &.spider-man-616 {
+        height: $spider-man-616-height;
+    }
+    &.mulher-aranha-65{
+        height: $mulher-aranha-65-height;
+    }
+    &.spider-man-1610{
+        height: $spider-man-1610-height;
+    }
+    &.spider-ham-8311{
+        height: $spider-ham-8311-height;
+    }
+    &.spider-man-90214{
+        height: $spider-man-90214-height;
+    }
+    &.spider-man-928 {
+        height: $spider-man-928-height;
+    }
+    &.sp-dr-14512 {
+        height: $sp-dr-14512-height;
+    }
+
+
+}
+
+

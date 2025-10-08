@@ -1,0 +1,45 @@
+@import "@/app/variables.scss";
+
+.imageContainer {
+
+
+    max-width: 40vw;
+    max-height: 120vw;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    
+
+ 
+    // Para smartphones bem pequenos (ex: iPhone SE)
+    @media screen and (max-width: 480px) {
+        display: flex;
+    }
+}
+
+
+.externalContaeiner{
+
+
+    display: none;
+     // Para smartphones bem pequenos (ex: iPhone SE)
+    @media screen and (max-width: 480px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+.textName{
+
+    font-size: 1rem;
+    font-weight: 600;
+    position: absolute;
+    bottom: 5%;
+    z-index: 20;
+    text-shadow: rgba(0, 0, 0, 0.3) -1px -1px 3px, rgba(0, 0, 0, 0.3) 1px -1px 3px, rgba(0, 0, 0, 0.3) -1px 1px 3px, rgba(0, 0, 0, 0.3) 1px 1px 3px, rgba(0, 0, 0, 0.7) 0px 0px 6px;
+
+}
+

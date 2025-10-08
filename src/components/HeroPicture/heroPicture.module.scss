@@ -1,0 +1,20 @@
+
+
+@import "@/app/variables.scss";
+
+.heroSize {
+    
+    
+    @media screen and (max-width: 1500px) {
+        max-height: calc(60vh - 100px);;
+    }
+    @media screen and (max-width: 800px) {
+        max-height: calc(60vh - 200px);;
+    }
+    // Para smartphones bem pequenos (ex: iPhone SE)
+    @media screen and (max-width: 480px) {
+        max-height: 200px;
+        
+    }
+   
+}

@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { IHeroData } from "@/interfaces/heroes";
 import Link from "next/link";
 import HeroPicture from "../HeroPicture";
-import { contains } from "cheerio";
 import styles from "./framerCarousel.module.scss";
 
 interface Iprops {

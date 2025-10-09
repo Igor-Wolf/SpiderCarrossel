@@ -1,3 +1,4 @@
+import { GET } from '@/app/api/heroes/route';
 import Carousel from '@/components/Carousel';
 import { IHeroData } from '@/interfaces/heroes';
 import React from 'react'
@@ -11,7 +12,7 @@ interface IProps {
 
 async function getHeroesData (): Promise <{data : IHeroData[]}> {
     
-    const res = await fetch(`${process.env.DOMAIN_ORIGIN}/api/heroes`);
+    const res = await GET();
 
   if (!res.ok) {
     throw new Error("Failed to request heroes list");

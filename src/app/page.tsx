@@ -1,9 +1,10 @@
 import HeroesList from "@/components/HeroesList";
 import { IHeroData } from "@/interfaces/heroes";
 import styles from "./page.module.scss"
+import { GET } from "./api/heroes/route";
 
 async function getHeroesData(): Promise<{ data: IHeroData[] }> {
-  const res = await fetch(`${process.env.DOMAIN_ORIGIN}/api/heroes`);
+  const res = await GET();
 
   if (!res.ok) {
     throw new Error("Failed to request heroes list");

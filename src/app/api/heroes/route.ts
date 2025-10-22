@@ -1,9 +1,9 @@
 import { NextResponse } from "next/server";
 
-export async function GET() {
-    const res = await fetch(`${process.env.API_URL}`);
-    const data = await res.json();
+import DataHeroes from "../../../../public/database/heroes"
 
-    return NextResponse.json({data})
+export async function GET() {    
+    // const res = await fetch(`${process.env.API_URL}`);
+    // const data = await res.json();
+    return NextResponse.json({ data: DataHeroes });
 }
-

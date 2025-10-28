@@ -2,7 +2,7 @@
 
 Site em next.js utilizando framermotion com temática de Spiderverse.
 
-![Organização dos Arquivos](https://github.com/user-attachments/assets/d1761d79-8fd4-4b1e-b338-ebfee2c9cb3a)
+![Organização dos Arquivos](https://private-user-images.githubusercontent.com/146994872/506729037-ac6da04a-c2de-4534-873e-d98e3da25c19.png)
 
 
 O site pode ser acessado [AQUI](https://spider-carrossel.vercel.app/)
